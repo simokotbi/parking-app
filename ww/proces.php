@@ -193,14 +193,14 @@ $sqlq=mysqli_query($mysqli, "UPDATE utilisateur SET pass= '$code' where adresseu
     $mail->isSMTP();                                            
     $mail->Host       = 'smtp.gmail.com';                   
     $mail->SMTPAuth   = true;                                   
-    $mail->Username   = 'simojetta2@gmail.com';                    
+    $mail->Username   = 'email@gmail.com';                    
     $mail->Password   = 'fgpqkzynbvednntd';                               
     $mail->SMTPSecure = 'tls';         
     $mail->Port       = 587;                                     
 
    
     
-    $mail->setFrom('simojetta2@gmail.com', 'simokotbi');
+    $mail->setFrom('email@gmail.com', 'simokotbi');
     $mail->addAddress($adresmail, 'Joe User');     
     $mail->addReplyTo('simo240d@gmail.com', 'Information');
 
